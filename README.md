@@ -19,7 +19,7 @@
 ### About
 
 * ract.js
-* material-ui
+* material-ui (React components for faster and easier web development. Build your own design system, or start with Material Design.)
 
 
 * `CLICKY-GAME` is a memory game built with `React.js` The goal of the game is simple, using your mouse, `CLICK` each of the twelve `Game of Thrones` character cards in whatever order you chose - the order does not matter, only that you do not click the same card twice!  
