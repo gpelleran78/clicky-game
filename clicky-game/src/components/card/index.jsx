@@ -8,6 +8,8 @@ export default function Card({
     id,
     type,
     flipped,
+    solved,
+    disabled,
     height,
     width,
 }) {
@@ -18,7 +20,7 @@ export default function Card({
                 width, 
                 height,
             }}
-            onclick={() => handleClick(id)}
+            onclick={() => disabled ? null : handleClick(id)}
         >
 
             <div className="flipper">
@@ -28,7 +30,7 @@ export default function Card({
                         width,
                     }}
                     className={flipped ? 'front' : 'back'}
-                    src={flipped ? `/img/${type}.png` : `/img/back.png`}
+                    src={flipped || solved ? `/img/${type}.png` : `/img/back.png`}
                 />
             </div>
         </div>
@@ -39,7 +41,9 @@ Card.protoTypes = {
     handleClick: PropTypes.func.isRequired,
     id: PropTypes.number.isRequired,
     flipped: PropTypes.bool.isRequired,
+    solved: PropTypes.bool.isRequired,
     type: PropTypes.string.isRequired,
     height: PropTypes.string.isRequired,
-    width: PropTypes.string.isRequired
+    width: PropTypes.string.isRequired,
+    disabled: PropTypes.string.isRequired,
 }
