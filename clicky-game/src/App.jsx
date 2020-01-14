@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Board from './components/board';
 
+import initializeDeck from './deck'
+
 export default function App() {
   const [cards, setCards] = useState([])
   const [flipped, setFlipped] = useState([])
