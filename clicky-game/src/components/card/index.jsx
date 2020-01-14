@@ -3,23 +3,32 @@ import PropTypes from 'prop-types'
 
 import './styles.css'
 
-export default function Card({ handleClicked, id, flipped, back, front, height, width }){
-    return
+export default function Card({ 
+    handleClick, 
+    id, 
+    flipped, 
+    back, 
+    front, 
+    height, 
+    width,
+ }) 
+    {
+    return(
     <div
-        className={'flip-container ${flipped ? 'flipped' : ''}'}  
-        style = {{ 
-            width,height
-        }} 
-        onclick={() => handleClick (id)}   
-        > 
+        className={`flip-container ${flipped ? 'flipped' : ''}`}
+        style={{
+            width, height
+        }}
+        onclick={() => handleClick(id)}
+    >
 
-        <div className = "flipper">
-            <img 
-            style = {{
-                height,width
-            }}
-            className={flipped ? 'front' : 'back'}
-            src={flippped ? front : back}
+        <div className="flipper">
+            <img
+                style={{
+                    height, width
+                }}
+                className={flipped ? 'front' : 'back'}
+                src={flippped ? front : back}
             />
         </div>
     </div>
@@ -27,11 +36,11 @@ export default function Card({ handleClicked, id, flipped, back, front, height, 
 }
 
 Card.protoTypes = {
-    handleClicked: PropTypes.func.isRequired,
+    handleClick: PropTypes.func.isRequired,
     id: PropTypes.number.isRequired,
     flipped: PropTypes.bool.isRequired,
     back: PropTypes.string.isRequired,
     front: PropTypes.string.isRequired,
-    height: PropTypes.string .isRequired,
+    height: PropTypes.string.isRequired,
     width: PropTypes.string.isRequired
 }
