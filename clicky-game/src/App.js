@@ -63,7 +63,7 @@ class App extends Component {
 
   alertWinner = (newState) => {
     if (newState.pickedChars.length === 12) {
-      newState.alertMessage = "KING!";
+      newState.alertMessage = "CHAMPION!";
       newState.pickedChars = [];
       this.setState(this.state = newState)
     }
@@ -74,7 +74,7 @@ class App extends Component {
       <div>
         <NavBar style={{ background: "#313133", marginBottom: "5px" }} />
 
-        <Grid container direction="column" style={{ margin: "0 auto", maxWidth: 1080 }}>
+        <Grid container direction="column" style={{ margin: "0 auto", maxWidth: 945 }}>
 
           <Grid item lg={12}>
             <Paper>
@@ -119,7 +119,7 @@ class App extends Component {
         </Grid>
         {
           <BottomNav style={{ background: "#313133", marginTop: "17.5px", paddingTop: "15px", borderTop: "2.5px solid slategray" }}>
-          <a href="https://github.com/gpelleran78/clicky-game" className="link" alt="clicky-game-github-link"><i className="fa fa-github fa-2x"></i></a>
+          <a href="https://github.com/gpelleran78/clicky-game" className="link" alt="clicky-game-github-link"></a>
         </BottomNav> 
 
         }
