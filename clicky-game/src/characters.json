@@ -58,6 +58,11 @@
         "id": 12,
         "name": "Sam",
         "image": "../imgs/sam.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Arya",
+        "image": "../imgs/arya.jpg"
     }
 
 ]
