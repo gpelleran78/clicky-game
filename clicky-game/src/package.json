@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/gpelleran78/clicky-game/issues"
   },
-  "homepage": "https://github.com/gpelleran78/clicky-game#readme"
+  "homepage": "https://github.com/gpelleran78/clicky-game#readme",
+  "dependencies": {
+    "node.js": "0.0.0"
+  }
 }
